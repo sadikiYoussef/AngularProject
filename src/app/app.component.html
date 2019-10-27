@@ -1,0 +1,27 @@
+<nav class="navbar navbar-light bg-light">
+  <a class="navbar-brand" href="#">
+    <img src="" width="30" height="30" class="d-inline-block align-top" alt="">
+    Calcul
+  </a>
+</nav>
+<ul class="nav nav-pills nav-justified" style="width: 80%;margin: 3%;margin-left: 14%">
+  <li class="nav-item">
+    <a class="nav-link" routerLink="/Std" routerLinkActive="active">Standard</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" routerLink="/M1" routerLinkActive="active">Niveau 1</a>
+  </li>
+  <li class="nav-item" >
+    <a class="nav-link" routerLink="/M2" routerLinkActive="active">Niveau 2</a>
+  </li>
+  <li class="nav-item" >
+    <a class="nav-link" routerLink="/M3" routerLinkActive="active">Niveau 3</a>
+  </li>
+
+</ul>
+<div class="row" style="margin-top: 5%">
+  <div class="col-md-3"></div>
+  <div class="col-md-6">
+<router-outlet></router-outlet></div>
+  <div class="col-md-3"></div>
+</div>

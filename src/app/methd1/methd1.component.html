@@ -1,0 +1,42 @@
+<h1 *ngIf="result">{{result}}  g/an</h1>
+<form (ngSubmit)="onSubmit(f)" #f="ngForm">
+  <div class="form-group">
+    <div class="row">
+      <div class="col-md-6">
+    <label for="formGroupExampleInput">Nj</label>
+    <input type="text" placeholder="Nj" class="form-control" name="n" id="n" ngModel>
+  </div>
+      <div class="col-md-6">
+          <label for="formGroupExampleInput">T</label>
+
+          <select class="custom-select" class="form-control" name="t" id="t" ngModel>
+            <option selected>Choisir Température...</option>
+            <option value="0"> -5 < T < 10 C°</option>
+            <option value="1"> 0 < <strong>T</strong> < 15 C°</option>
+            <option value="2"> 10 <strong>T</strong> > 25 C°</option>
+            <option value="3"> 20 <strong>T</strong> > 35 C°</option>
+          </select>
+
+  </div>
+    </div>
+    <div class="row" style="margin-top: 4%">
+    <div class="col-md-6">
+      <label for="formGroupExampleInput">Type Gasoline</label>
+      <div class="input-group mb-3">
+        <div class="input-group-prepend">
+          <label class="input-group-text" for="inputGroupSelect01">Options</label>
+        </div>
+        <select class="custom-select form-control" name="gasoline" id="gasoline" ngModel>
+          <option selected>Choisir Type Gasoline...</option>
+          <option value="0">Gasoline PCs</option>
+          <option value="1">Gasoline LDVs</option>
+          <option value="2">Two-wheel vehicules</option>
+        </select>
+      </div>
+    </div>
+
+  </div>
+  </div>
+  <button style="width: 30%;margin-left: 35%" type="submit" class="btn btn-success">Calcul</button>
+
+</form>
